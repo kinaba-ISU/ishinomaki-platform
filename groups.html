@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>団体を探す｜石巻圏 地域課題プラットフォーム（仮称）試作版</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="groups">
+
+<div class="proto-banner" role="note">これは確認用の<strong>試作ページ</strong>です。掲載している団体はすべて架空のもの（ダミー）です。</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">石巻圏 地域課題プラットフォーム<small>（仮称）石巻市・東松島市・女川町</small></a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="index.html#know">知る</a>
+      <a href="index.html#talk">話す</a>
+      <a href="index.html#act">一緒に動く</a>
+      <a href="groups.html" aria-current="page">団体を探す</a>
+      <a href="index.html#join">参加する</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h1 class="section-title"><span class="tag blue">① 知る</span>団体・企業を探す</h1>
+      <p class="section-lead">課題・地域・種別で絞り込めます。各団体の「求めていること」と「提供できること」から、連携のきっかけを探してください。</p>
+
+      <form class="filters" role="search" onsubmit="return false">
+        <div class="kw">
+          <label for="f-keyword">キーワード</label>
+          <input id="f-keyword" type="search" placeholder="例：見守り、デザイン、漁業">
+        </div>
+        <div>
+          <label for="f-issue">課題</label>
+          <select id="f-issue"><option value="">すべて</option></select>
+        </div>
+        <div>
+          <label for="f-area">地域</label>
+          <select id="f-area"><option value="">すべて</option></select>
+        </div>
+        <div>
+          <label for="f-type">種別</label>
+          <select id="f-type"><option value="">すべて</option></select>
+        </div>
+        <div>
+          <button id="f-reset" type="button">条件をクリア</button>
+        </div>
+      </form>
+
+      <p class="result-count" id="result-count" aria-live="polite">読み込み中…</p>
+      <ul class="group-list" id="group-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p style="margin:0">石巻圏 地域課題プラットフォーム（仮称）試作版</p>
+    <p style="margin:4px 0 0">運営・お問い合わせ先：［準備中］</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
